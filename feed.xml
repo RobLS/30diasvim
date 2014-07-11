@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>30 Dias de Vim - Rob LS</title>
+    <title>30 Dias de Vim</title>
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 11 Jul 2014 17:07:44 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Jul 2014 17:07:44 -0500</lastBuildDate>
+    <pubDate>Fri, 11 Jul 2014 17:15:48 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Jul 2014 17:15:48 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
     
       <item>
