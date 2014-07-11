@@ -3,10 +3,10 @@
   <channel>
     <title>30 Dias de Vim - Rob LS</title>
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
-    <link>http:robls.github.io/</link>
-    <atom:link href="http:robls.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 11 Jul 2014 17:02:28 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Jul 2014 17:02:28 -0500</lastBuildDate>
+    <link>http:robls.github.io/30diasvim/</link>
+    <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 11 Jul 2014 17:04:43 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Jul 2014 17:04:43 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>&lt;h1 id=&quot;hola-mundo&quot;&gt;Hola Mundo&lt;/h1&gt;
 </description>
         <pubDate>Fri, 11 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http:robls.github.io/Dia2-Basicos.html</link>
-        <guid isPermaLink="true">http:robls.github.io/Dia2-Basicos.html</guid>
+        <link>http:robls.github.io/30diasvim/Dia2-Basicos.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia2-Basicos.html</guid>
         
         
       </item>
@@ -29,8 +29,8 @@
 &lt;p&gt;TODO: lol todo el post. :D&lt;/p&gt;
 </description>
         <pubDate>Fri, 11 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http:robls.github.io/Dia1-basicos.html</link>
-        <guid isPermaLink="true">http:robls.github.io/Dia1-basicos.html</guid>
+        <link>http:robls.github.io/30diasvim/Dia1-basicos.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia1-basicos.html</guid>
         
         
       </item>
@@ -52,8 +52,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Mon, 07 Jul 2014 13:15:24 -0500</pubDate>
-        <link>http:robls.github.io/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http:robls.github.io/welcome-to-jekyll.html</guid>
+        <link>http:robls.github.io/30diasvim/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
