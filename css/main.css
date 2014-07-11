@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF85032', endColorstr='#FF18F063');
+  background-image: -moz-linear-gradient(top, #f85032 0%, #f85032 13%, #e5f50c 29%, #e5f50c 41%, #18f063 60%, #18f063 71%, #2727e6 88%, #2727e6 100%);
+  background-image: -webkit-linear-gradient(top, #f85032 0%, #f85032 13%, #e5f50c 29%, #e5f50c 41%, #18f063 60%, #18f063 71%, #2727e6 88%, #2727e6 100%);
+  background-image: linear-gradient(to bottom, #f85032 0%, #f85032 13%, #e5f50c 29%, #e5f50c 41%, #18f063 60%, #18f063 71%, #2727e6 88%, #2727e6 100%);
+}
+
+p, a {
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+@media (min-width: 600px) {
+  .page-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 2em;
+  }
+  .page-content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+aside {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  aside {
+    width: 28.57143%;
+    float: left;
+    margin-right: 2.04082%;
+  }
+}
+aside h1 {
+  font-size: 10em;
+  margin-bottom: -20px;
+}
+aside h3 {
+  font-size: 1.5em;
+}
+aside p {
+  padding-top: 20px;
+  margin: 20px 0;
+  border-top: solid 1px #000;
+}
+aside ul li {
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+@media (min-width: 600px) {
+  .content {
+    width: 69.38776%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.main {
+  background-color: #58e893;
+}
+
+header {
+  margin: auto;
+}
+header h1 {
+  text-align: center;
+}
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 60px;
+  }
+}
+header p {
+  margin: 5% 0;
+  padding: 1%;
+  text-align: center;
+}
+
+.home {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.home ul {
+  margin: 0;
+  padding: 0;
+}
+
+.home ul li {
+  list-style: none;
+  margin: 1px auto;
+}
+.home ul li a {
+  margin: 0 auto;
+  padding: 1em 0em;
+  display: block;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+.home ul li a:hover {
+  background-color: #26ec7f;
+  border: solid 1px white;
+}
+
+.post-content {
+  padding: 0 10px;
+}
