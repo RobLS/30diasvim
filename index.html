@@ -8,6 +8,30 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.">
     <link rel="canonical" href="http:robls.github.io/30diasvim/">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">
+/*        $(function() {
+
+    var $sidebar   = $("aside"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 50;
+    console.log($(window).scrollTop() + '   ' + $("aside").offset().top);
+    $window.scroll(function() {
+    console.log($(window).scrollTop() + '   ' + $("aside").offset().top);
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top - topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+    
+});/*
+    </script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -32,9 +56,9 @@
 
 </header>
 
-  </div>
+    </div>
     <div class="page-content">
-      <aside>
+      <aside id="sidebar">
   <h1>Vi</h1>
   <h3>IMproved</h3>
   <p class="aside-words">Simple guide about a constant progress.</p>
@@ -54,7 +78,7 @@
     
     
       <li>
-        <a class="post-link" href="/30diasvim/Dia1-basicos.html">Dia 1. Basicos en Vim</a>
+        <a class="post-link" href="/30diasvim/Dia1-Basicos.html">Dia 1. Basicos en Vim</a>
       </li>
     
       <li>
@@ -67,6 +91,24 @@
 
       </div>
     </div>
+    <footer class="site-footer">
+
+  <div class="page-content">
+
+    <div id="page-navigation">
+        <div class="left">
+        
+        </div>
+        <a href="index.html">Inicio</a>
+        <div class="right">
+        
+        </div>
+    </div> 
+
+  </div>
+
+</footer>
+
   </div>
     </body>
 </html>

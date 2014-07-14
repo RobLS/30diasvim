@@ -5,15 +5,15 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 11 Jul 2014 18:07:02 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Jul 2014 18:07:02 -0500</lastBuildDate>
+    <pubDate>Mon, 14 Jul 2014 17:50:30 -0500</pubDate>
+    <lastBuildDate>Mon, 14 Jul 2014 17:50:30 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
     
       <item>
         <title>Dia 2. Basicos</title>
         <description>&lt;h1 id=&quot;hola-mundo&quot;&gt;Hola Mundo&lt;/h1&gt;
 </description>
-        <pubDate>Fri, 11 Jul 2014 00:00:00 -0500</pubDate>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
         <link>http:robls.github.io/30diasvim/Dia2-Basicos.html</link>
         <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia2-Basicos.html</guid>
         
@@ -22,15 +22,99 @@
     
       <item>
         <title>Dia 1. Basicos en Vim</title>
-        <description>&lt;h1 id=&quot;hola-mundo&quot;&gt;Hola Mundo&lt;/h1&gt;
+        <description>&lt;p&gt;No voy a empezar por una instalación de vim, entonces ya deberías tener un vim en tu maquina, en caso que no lo tengas, a instalar!.&lt;/p&gt;
 
-&lt;p&gt;Hola Mundo&lt;/p&gt;
+&lt;p&gt;Otra cosa, uso linux, no se como sean estas cosas en windows y en mac debería de ser lo mismo ( o casi lo mismo :).&lt;/p&gt;
 
-&lt;p&gt;TODO: lol todo el post. :D&lt;/p&gt;
+&lt;p&gt;Por ultimo, ‘$’ ese signo significa un comando desde terminal, ‘:’ los dos puntos significan un comando desde vim.&lt;/p&gt;
+
+&lt;h2 id=&quot;ligera-introduccin&quot;&gt;Ligera Introducción&lt;/h2&gt;
+&lt;p&gt;Vim es un editor de texto, corre perron desde tu shell, aunque también hay GUIs para el que no quiera usar el shell. En vim todo tu teclado es una función (acción). Así que cuidado, dos dedazos o con menos y uno puede hacer cosas, muchas cosas. Bueno ya con eso.&lt;/p&gt;
+
+&lt;p&gt;Ya con el paso de los días veremos que pasa.&lt;/p&gt;
+
+&lt;h2 id=&quot;edicin-en-vim&quot;&gt;Edición en Vim&lt;/h2&gt;
+
+&lt;p&gt;Vamos a editar archivos, desde terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$vim archivo1.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Con esto ya tenemos el archivo cargado en vim y claro vim.&lt;/p&gt;
+
+&lt;h3 id=&quot;modos-en-vim&quot;&gt;Modos en Vim&lt;/h3&gt;
+&lt;p&gt;Insertar o Edición.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;i&lt;/code&gt; Esto nos deja en modo edición justo donde este el puntero.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;a&lt;/code&gt; Este nos deja en modo edición un carácter adelante del puntero.&lt;/p&gt;
+
+&lt;h3 id=&quot;modo-visual&quot;&gt;Modo Visual.&lt;/h3&gt;
+&lt;p&gt;Como vim por default no habilita el mouse no podemos seleccionar texto a no ser que estemos en modo visial.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;v&lt;/code&gt; Selecciona carácter por carácter.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;V&lt;/code&gt; Selecciona lineas completas.&lt;/p&gt;
+
+&lt;h3 id=&quot;modo-normal&quot;&gt;Modo Normal.&lt;/h3&gt;
+&lt;p&gt;Por default es el modo en el que inicia vim. en este modo podemos movernos a través del archivo y aplicar funciones y comandos.
+&lt;code&gt;esc&lt;/code&gt; Si estas en modo INSERTAR o VISUAL presionas ESC y regresas al modo normal.&lt;/p&gt;
+
+&lt;h3 id=&quot;moviendo-el-puntero&quot;&gt;Moviendo el puntero.&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;h, j, k, l&lt;/code&gt; izq, abajo, arriba, derecha.
+Respectivamente.&lt;/p&gt;
+
+&lt;h3 id=&quot;copiar-y-pegar&quot;&gt;Copiar y Pegar.&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;y&lt;/code&gt; Copiar&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;p&lt;/code&gt; Pegar&lt;/p&gt;
+
+&lt;p&gt;Al principio el comportamiento de pegar puede ser extraño. Pero con practica lo dominas.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;yy&lt;/code&gt; Dos veces ‘y’ y haz copiado la linea entera.&lt;/p&gt;
+
+&lt;h3 id=&quot;undo-y--redo&quot;&gt;Undo y  Redo.&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;u&lt;/code&gt; Undo.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;CTRL+r&lt;/code&gt; redo.&lt;/p&gt;
+
+&lt;p&gt;Creo que es mas claro decir UNDO y REDO que hacer y deshacer o rehacer o lo que sea…&lt;/p&gt;
+
+&lt;h3 id=&quot;reemplazar&quot;&gt;Reemplazar&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;r&lt;/code&gt; Reemplaza el carácter del puntero por el siguiente presionado.&lt;/p&gt;
+
+&lt;p&gt;Ej. ‘borror’ Para cambiar la segunda ‘o’ por ‘a’ deberíamos hacer (con el puntero sobre la segunda ‘o’: &lt;code&gt;ra&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;guardar-archivos&quot;&gt;Guardar Archivos&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;:w&lt;/code&gt; En modo normal, presionamos ‘:’ seguido de ‘w’ + ENTER y listo nuestros cambios se han guardado.&lt;/p&gt;
+
+&lt;h2 id=&quot;salir&quot;&gt;Salir&lt;/h2&gt;
+&lt;p&gt;Por ultimo cuando terminamos de trabajar el archivo, salimos con el comando ‘q’
+&lt;code&gt;:q&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;entonces&quot;&gt;Entonces&lt;/h2&gt;
+&lt;p&gt;Que pasa si &lt;code&gt;:wq&lt;/code&gt; ?&lt;/p&gt;
+
+&lt;p&gt;Que pasa si &lt;code&gt;yyp&lt;/code&gt; ?&lt;/p&gt;
+
+&lt;h2 id=&quot;comandos-extras&quot;&gt;Comandos Extras&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;A&lt;/code&gt; Entra en modo edicion al final de la linia.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;I&lt;/code&gt; Entra en modo edicion al inicio de la linia.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;R&lt;/code&gt; Entra en modo Reemplasar.&lt;/p&gt;
+
+&lt;h2 id=&quot;dia-1&quot;&gt;Dia 1&lt;/h2&gt;
+
+&lt;p&gt;Fin del dia 1, son cosas muy básicas, asi empezamos todos.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 11 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http:robls.github.io/30diasvim/Dia1-basicos.html</link>
-        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia1-basicos.html</guid>
+        <pubDate>Mon, 14 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http:robls.github.io/30diasvim/Dia1-Basicos.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia1-Basicos.html</guid>
         
         
       </item>
