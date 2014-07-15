@@ -5,17 +5,81 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 14 Jul 2014 17:50:30 -0500</pubDate>
-    <lastBuildDate>Mon, 14 Jul 2014 17:50:30 -0500</lastBuildDate>
+    <pubDate>Tue, 15 Jul 2014 12:02:11 -0500</pubDate>
+    <lastBuildDate>Tue, 15 Jul 2014 12:02:11 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
     
       <item>
-        <title>Dia 2. Basicos</title>
-        <description>&lt;h1 id=&quot;hola-mundo&quot;&gt;Hola Mundo&lt;/h1&gt;
+        <title>Dia 2. Configuración</title>
+        <description>&lt;h2 id=&quot;el-archivo-vimrc&quot;&gt;El archivo vimrc&lt;/h2&gt;
+
+&lt;p&gt;Como todo vim tiene un archivo de configuración del que toma ciertos parámetros para su comportamiento.&lt;/p&gt;
+
+&lt;p&gt;El archivo vimrc por lo regular se crea en el home de nuestro usuario: &lt;code&gt;/home/rob/.vimrc&lt;/code&gt; En este archivo tendremos nuestra configuración. &lt;/p&gt;
+
+&lt;h2 id=&quot;configuracion&quot;&gt;Configuracion&lt;/h2&gt;
+&lt;p&gt;Para que lo siguientes ejemplos sean permanentes deberían estar linea por linea en el archivo ‘.vimrc’. También los podemos cambiar en cada sección de vim en forma de comando &lt;code&gt;:set nu&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;set history=999&lt;/code&gt; Es el numero de lineas que guardara el historial de vim.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set autoread&lt;/code&gt; Cuando tenemos un archivo en vim y se modifica desde fuera esta opción detectara los cambios.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set encoding=utf8&lt;/code&gt; Activamos utf8 por default.&lt;/p&gt;
+
+&lt;h3 id=&quot;interfaz&quot;&gt;Interfaz&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;set ruler&lt;/code&gt; Con esto veremos la posición del puntero en formato de ‘linea,columna’.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set cmdheight=2&lt;/code&gt; Esto define le numero de lineas para la parte de comandos,2 renglones es bueno ;).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set ignorecase&lt;/code&gt; Para las búsquedas ignora mayúsculas de minúsculas&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set hlsearch&lt;/code&gt; Para que resalten las coincidencias al buscar.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set showmatch&lt;/code&gt; Muestra los pares de llaves ‘{‘ ‘}’, cuando el puntero esta sobre alguna.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;syntax enable&lt;/code&gt; Marcado de sintaxis activado.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set nu&lt;/code&gt; Abilita el numero para cada linea.&lt;/p&gt;
+
+&lt;h3 id=&quot;archivos-y-respaldos&quot;&gt;Archivos y respaldos&lt;/h3&gt;
+&lt;p&gt;Vim genera respaldos y archivos swap, por seguridad e incomodidad los apagamos.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set nobackup&lt;/code&gt; Apagamos los respaldos.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set nowb&lt;/code&gt; La abreviación de NoWriteBackup.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set noswapfile&lt;/code&gt; Apagamos los archivos swap.&lt;/p&gt;
+
+&lt;h3 id=&quot;texto-tabulador-e-indentado&quot;&gt;Texto, tabulador e indentado&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;set expandtab&lt;/code&gt; Cambia tabuladores por espacios.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set tabstop=2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set shiftwidth=2&lt;/code&gt; Indicamos el numero de espacios por cada tab. Aqui depende de gusto y entandares según tu lenguaje.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set ai&lt;/code&gt; Auto indentado&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set si&lt;/code&gt; Smart indent, identado inteligente ;)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set wrap&lt;/code&gt; Con esta opción activa, las lineas mas largas al tamaño de la ventana “caen al siguiente renglón”. NO GENERAN UNA NUEVA LINEA. (Esto se ve mas claro cuando tenemos activado el numerado por linea.&lt;/p&gt;
+
+&lt;h3 id=&quot;barra-de-estado&quot;&gt;Barra de estado&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;set laststatus=2&lt;/code&gt; Para que siempre muestre la barra.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Lin:\ %l\ \ \ Col:\ %c&lt;/code&gt;
+Con esto mostramos la barra de estado inflación importante, como el archivo, el directorio y la posición actual. &lt;/p&gt;
+
+&lt;h2 id=&quot;dia-2&quot;&gt;Dia 2.&lt;/h2&gt;
+
+&lt;p&gt;Con esto ya tenemos un vim más “chingon” al momento de trabajar. Para mas configuraciones podemos buscar en google, mucha gente comparte sus .vimrc.
+Creo que estas configuraciones son generales y básicas para trabajar con vim de forma más cómoda. Ya veré que otras cosas encuentro para añadir al .vimrc&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Jul 2014 00:00:00 -0500</pubDate>
-        <link>http:robls.github.io/30diasvim/Dia2-Basicos.html</link>
-        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia2-Basicos.html</guid>
+        <link>http:robls.github.io/30diasvim/Dia2-Configuracion.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia2-Configuracion.html</guid>
         
         
       </item>

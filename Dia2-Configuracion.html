@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dia 2. Configuración - RobLS</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.">
+    <link rel="canonical" href="http:robls.github.io/30diasvim/Dia2-Configuracion.html">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">
+/*        $(function() {
+
+    var $sidebar   = $("aside"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 50;
+    console.log($(window).scrollTop() + '   ' + $("aside").offset().top);
+    $window.scroll(function() {
+    console.log($(window).scrollTop() + '   ' + $("aside").offset().top);
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top - topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+    
+});/*
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+    <body>
+  <div class="main">
+    <div class="page-content">
+    <header class="site-header">
+
+  <div class="wrap">
+
+    <h1>30 Dias de Vim</h1>
+
+    <p>He notado que estoy atascado en vim, atascado por que ya no aprendo cosas nuevas, atascado por que no uso las funciones que en algun momento leí, aprendí y ahora olvide. En 30 días de vim uno debería reaprender nuevas funciones en vim. O al menos ese es el objetivo de este experimento busco conocer mas este editor.</p>
+    
+    <p>Aquí registrare todos esos días (solo son 30 como si deberas), bueno... Espero que sirva como una introducción para aquellos que empiecen y como una referencia para el futuro para cualquier ser olvidadiso.</p>
+
+  </div>
+
+</header>
+
+    </div>
+    <div class="page-content">
+      <aside id="sidebar">
+  <h1>Vi</h1>
+  <h3>IMproved</h3>
+  <p class="aside-words">Simple guide about a constant progress.</p>
+  <ul class="redes">
+    <li><a href="https://github.com/RobLS"><img src="images/GitHub-Mark-32px.png"/></a></li>
+    <li><a ><img src="images/bird_black_32_0.png"/></a></li>
+    <li><a><img src="images/gmail_black_32.png"/></a></li>
+  </ul>
+</aside>
+
+      <div class="content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1>Dia 2. Configuración</h1>
+    <p class="meta">Jul 15, 2014</p>
+  </header>
+
+  <article class="post-content">
+  <h2 id="el-archivo-vimrc">El archivo vimrc</h2>
+
+<p>Como todo vim tiene un archivo de configuración del que toma ciertos parámetros para su comportamiento.</p>
+
+<p>El archivo vimrc por lo regular se crea en el home de nuestro usuario: <code>/home/rob/.vimrc</code> En este archivo tendremos nuestra configuración. </p>
+
+<h2 id="configuracion">Configuracion</h2>
+<p>Para que lo siguientes ejemplos sean permanentes deberían estar linea por linea en el archivo ‘.vimrc’. También los podemos cambiar en cada sección de vim en forma de comando <code>:set nu</code>.</p>
+
+<h3 id="general">General</h3>
+<p><code>set history=999</code> Es el numero de lineas que guardara el historial de vim.</p>
+
+<p><code>set autoread</code> Cuando tenemos un archivo en vim y se modifica desde fuera esta opción detectara los cambios.</p>
+
+<p><code>set encoding=utf8</code> Activamos utf8 por default.</p>
+
+<h3 id="interfaz">Interfaz</h3>
+<p><code>set ruler</code> Con esto veremos la posición del puntero en formato de ‘linea,columna’.</p>
+
+<p><code>set cmdheight=2</code> Esto define le numero de lineas para la parte de comandos,2 renglones es bueno ;).</p>
+
+<p><code>set ignorecase</code> Para las búsquedas ignora mayúsculas de minúsculas</p>
+
+<p><code>set hlsearch</code> Para que resalten las coincidencias al buscar.</p>
+
+<p><code>set showmatch</code> Muestra los pares de llaves ‘{‘ ‘}’, cuando el puntero esta sobre alguna.</p>
+
+<p><code>syntax enable</code> Marcado de sintaxis activado.</p>
+
+<p><code>set nu</code> Abilita el numero para cada linea.</p>
+
+<h3 id="archivos-y-respaldos">Archivos y respaldos</h3>
+<p>Vim genera respaldos y archivos swap, por seguridad e incomodidad los apagamos.</p>
+
+<p><code>set nobackup</code> Apagamos los respaldos.</p>
+
+<p><code>set nowb</code> La abreviación de NoWriteBackup.</p>
+
+<p><code>set noswapfile</code> Apagamos los archivos swap.</p>
+
+<h3 id="texto-tabulador-e-indentado">Texto, tabulador e indentado</h3>
+
+<p><code>set expandtab</code> Cambia tabuladores por espacios.</p>
+
+<p><code>set tabstop=2</code></p>
+
+<p><code>set shiftwidth=2</code> Indicamos el numero de espacios por cada tab. Aqui depende de gusto y entandares según tu lenguaje.</p>
+
+<p><code>set ai</code> Auto indentado</p>
+
+<p><code>set si</code> Smart indent, identado inteligente ;)</p>
+
+<p><code>set wrap</code> Con esta opción activa, las lineas mas largas al tamaño de la ventana “caen al siguiente renglón”. NO GENERAN UNA NUEVA LINEA. (Esto se ve mas claro cuando tenemos activado el numerado por linea.</p>
+
+<h3 id="barra-de-estado">Barra de estado</h3>
+
+<p><code>set laststatus=2</code> Para que siempre muestre la barra.</p>
+
+<p><code>set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Lin:\ %l\ \ \ Col:\ %c</code>
+Con esto mostramos la barra de estado inflación importante, como el archivo, el directorio y la posición actual. </p>
+
+<h2 id="dia-2">Dia 2.</h2>
+
+<p>Con esto ya tenemos un vim más “chingon” al momento de trabajar. Para mas configuraciones podemos buscar en google, mucha gente comparte sus .vimrc.
+Creo que estas configuraciones son generales y básicas para trabajar con vim de forma más cómoda. Ya veré que otras cosas encuentro para añadir al .vimrc</p>
+
+  </article>
+
+</div>
+      </div>
+    </div>
+    <footer class="site-footer">
+
+  <div class="page-content">
+
+    <div id="page-navigation">
+        <div class="left">
+        
+                <a href="/30diasvim/Dia1-Basicos.html" title="Previous Post:
+Dia 1. Basicos en Vim">&laquo; Dia 1. Basicos en Vim</a>
+        
+        </div>
+        <a href="index.html">Inicio</a>
+        <div class="right">
+        
+        </div>
+    </div> 
+
+  </div>
+
+</footer>
+
+  </div>
+    </body>
+</html>
