@@ -5,9 +5,50 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 15 Jul 2014 12:02:11 -0500</pubDate>
-    <lastBuildDate>Tue, 15 Jul 2014 12:02:11 -0500</lastBuildDate>
+    <pubDate>Wed, 16 Jul 2014 13:53:33 -0500</pubDate>
+    <lastBuildDate>Wed, 16 Jul 2014 13:53:33 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Dia 3. Ayuda</title>
+        <description>&lt;p&gt;Empecemos a usar vim como nuestro editor por default, para seguir aprendiendo deberiamos usar vim como la primer opcion para editar cualquier archivo de texto. &lt;/p&gt;
+
+&lt;p&gt;Como programador edito desde mis archivos de configuracion, hasta los post de este proyecto. Ya estoy acostumbrado a abrir la linea de comandos y ejecutar vim. &lt;/p&gt;
+
+&lt;p&gt;Lo importantese es sentirse comodo.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-archivo-vimrc&quot;&gt;El archivo vimrc&lt;/h2&gt;
+
+&lt;p&gt;Ayer olvide agregar una linea en este archivo, al momento de programar nos ayuda a resaltar mejor la sintaxis y dependiendo de los gustos:&lt;/p&gt;
+
+&lt;p&gt;colorscheme evening&lt;/p&gt;
+
+&lt;p&gt;Con esta linea en el archivo de configuracion tenemos un nuevo esquema de colores para la sintaxis. &lt;/p&gt;
+
+&lt;h2 id=&quot;ayuda&quot;&gt;Ayuda&lt;/h2&gt;
+
+&lt;p&gt;Ya tenemos funciones basicas y configuracion basica. Y para comprobar todo esto podemos usar el sistema de ayuda de vim.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:help colorscheme
+:help help
+:help
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Podemos probar con algunas de las configuraciones que tenemos en el archivo vimrc o con los simples comandos del teclado.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:help j
+:help x
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;dia-3&quot;&gt;Dia 3&lt;/h2&gt;
+&lt;p&gt;Lo importante es que comprender y estar seguros de que estamos haciendo. Es parte importante para comprender Vim, y para sentirse comodo cuandlo usamos.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http:robls.github.io/30diasvim/Dia3-Ayuda.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia3-Ayuda.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dia 2. Configuración</title>
