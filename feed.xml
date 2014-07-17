@@ -5,9 +5,60 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 16 Jul 2014 13:53:33 -0500</pubDate>
-    <lastBuildDate>Wed, 16 Jul 2014 13:53:33 -0500</lastBuildDate>
+    <pubDate>Thu, 17 Jul 2014 10:58:56 -0500</pubDate>
+    <lastBuildDate>Thu, 17 Jul 2014 10:58:56 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Dia 4. Danzarín del agua</title>
+        <description>&lt;h2 id=&quot;antes-de-seguir&quot;&gt;Antes de seguir&lt;/h2&gt;
+
+&lt;p&gt;No sé, pero el no tener estructurado lo que va a pasar al día siguiente en este “experimento” me tiene un poco preocupado, primero porque cabe la posibilidad de que repita algo, no una, sino varias veces. Y segundo, que puede que no lleve un buen flujo de conceptos, en una de esas puedo hablar de algo como si ya lo hubiera explicado. Bueno no sé, todo fue tan repentino… Jaja.&lt;/p&gt;
+
+&lt;p&gt;Por el bien de todos espero tomarme un tiempo para estructurar estos 30 días y saber mínimo en que termina…&lt;/p&gt;
+
+&lt;h2 id=&quot;danza-del-agua-as-aria-stark&quot;&gt;Danza del agua (“as Aria Stark”)&lt;/h2&gt;
+
+&lt;p&gt;Bueno ando medio inspirado, por eso el titulo tan cantarino. Aquí el titulo más claro, &lt;code&gt;Moviéndote en vim con pez en el agua&lt;/code&gt; ya se entiende no?… &lt;/p&gt;
+
+&lt;h3 id=&quot;comandos-previos&quot;&gt;Comandos previos&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;a, i, h, j, k, l&lt;/code&gt;  Con estos podemos movernos y entrar en modo edición a partir de la localidad del cursor.&lt;/p&gt;
+
+&lt;h3 id=&quot;chachacha&quot;&gt;1, 2, 3, chachacha&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;w&lt;/code&gt; De la palabra ‘word’ con la tecla w en modo NORMAL avanzamos de palabra en palabra.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;b&lt;/code&gt; De la palabra ‘(Se queda de tarea)’ “avanzamos” de palabra en palabra pero en reversa. :D&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;0&lt;/code&gt; Con cero llegamos al inicio de la linea.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$&lt;/code&gt; Con signo de pesos, llegamos al final de la linea.&lt;/p&gt;
+
+&lt;p&gt;Sin importar donde estemos, sobre la linea que estemos, estos dos comandos nos llevan al inicio o al final.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;W&lt;/code&gt; Con w mayúscula (shift+w) avanzamos palabra por palabra pero sin contar puntuaciones.(pasa los mismo con &lt;code&gt;b&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Osea que “hola, que hace?” para llegar de la “h” al “?” cuesta 4 &lt;code&gt;w&lt;/code&gt;, mientras que con &lt;code&gt;W&lt;/code&gt; nos cuesta solo 2. Con esto espero quede un poco más claro la diferencia entre w-W y b-B.&lt;/p&gt;
+
+&lt;h3 id=&quot;los-nmeros&quot;&gt;Los números&lt;/h3&gt;
+&lt;p&gt;Podemos usar los números del teclado para indicar el numero de veces que queremos repetir ‘X’ comando.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;4w&lt;/code&gt; Avanzaría 4 palabras adelante.
+&lt;code&gt;2j&lt;/code&gt; Bajaría 2 lineas.&lt;/p&gt;
+
+&lt;p&gt;Esto aplica para cualquier comando que quepa en la razón de: “Me puedes ejecutar N veces”. Y de momento creo que todos cumplen.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;4$&lt;/code&gt; Nos llevaría 4 lineas abajo, al final de la linea. o:. Con el 0 no entiendo como funciona.&lt;/p&gt;
+
+&lt;h2 id=&quot;dia-4&quot;&gt;Dia 4&lt;/h2&gt;
+&lt;p&gt;Ya podemos movernos de forma mas eficiente entre el texto. Practicando entenderemos mejor como funcionan estos comandos. Ah! &lt;code&gt;b&lt;/code&gt; es por backward. ;)&lt;/p&gt;
+</description>
+        <pubDate>Thu, 17 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http:robls.github.io/30diasvim/Dia4-Dazarin-del-agua.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia4-Dazarin-del-agua.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dia 3. Ayuda</title>
