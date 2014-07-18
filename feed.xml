@@ -5,13 +5,13 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 18 Jul 2014 12:00:39 -0500</pubDate>
-    <lastBuildDate>Fri, 18 Jul 2014 12:00:39 -0500</lastBuildDate>
+    <pubDate>Fri, 18 Jul 2014 12:07:19 -0500</pubDate>
+    <lastBuildDate>Fri, 18 Jul 2014 12:07:19 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
     
       <item>
         <title>Dia 5. Al mero estilo Vim</title>
-        <description>&lt;p&gt;Ahora toca editar “al mero estilo Vim”, no tengo más introduccion.&lt;/p&gt;
+        <description>&lt;p&gt;Ahora toca editar “al mero estilo Vim”, no tengo más introducción.&lt;/p&gt;
 
 &lt;h2 id=&quot;dos-patadas-y-a-editar&quot;&gt;Dos patadas y a editar&lt;/h2&gt;
 
@@ -24,42 +24,42 @@
 
 &lt;p&gt;Con el puntero sobre “lundo” hacemos, &lt;code&gt;cw&lt;/code&gt; borra la palabra y corregimos.&lt;/p&gt;
 
-&lt;p&gt;Aplica tambien para &lt;code&gt;c$&lt;/code&gt; Incluso podemos hacer &lt;code&gt;c3$&lt;/code&gt; que nos eliminaria 3 lineas apartide de nuestra posicion actual y nos dejaria en modo edicion.&lt;/p&gt;
+&lt;p&gt;Aplica también para &lt;code&gt;c$&lt;/code&gt; Incluso podemos hacer &lt;code&gt;c3$&lt;/code&gt; que nos eliminaría 3 lineas apartide de nuestra posición actual y nos dejaría en modo edición.&lt;/p&gt;
 
 &lt;p&gt;Y si nuestra linea esta completamente mal, para borrarla y editar hay dos formas &lt;code&gt;d$i&lt;/code&gt; o &lt;code&gt;cc&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Es tan natural cuando usas los comandos, por ejemplo &lt;code&gt;d$i&lt;/code&gt; significa: forra hasta el final de la linea y entra en modo edicion.&lt;/p&gt;
+&lt;p&gt;Es tan natural cuando usas los comandos, por ejemplo &lt;code&gt;d$i&lt;/code&gt; significa: forra hasta el final de la linea y entra en modo edición.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cc&lt;/code&gt; es lo mismo pero en dos dedasos.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cc&lt;/code&gt; es lo mismo pero en dos dedazos.&lt;/p&gt;
 
-&lt;p&gt;Por ultimo &lt;code&gt;C&lt;/code&gt; en muchos casos la letra mayuscula del comando tiene una funcion similar, en el caso de &lt;code&gt;C&lt;/code&gt; idicamos que queremos cambiar el texto hasta el final de la linea.&lt;/p&gt;
+&lt;p&gt;Por ultimo &lt;code&gt;C&lt;/code&gt; en muchos casos la letra mayúscula del comando tiene una función similar, en el caso de &lt;code&gt;C&lt;/code&gt; indicamos que queremos cambiar el texto hasta el final de la linea. (suponiendo que el puntero esta sobre la ‘e’ después de la coma)&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Esto se queda, `e`sto se va.
+&lt;pre&gt;&lt;code&gt;Esto se queda, esto se va.
 `C`
 Esto se queda, 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Y quedamos en modo INSERT.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;s&lt;/code&gt; Entramos en modo edicion “subsitituyendo” el caracter en la posicion actual.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;s&lt;/code&gt; Entramos en modo edición “substituyendo” el carácter en la posición actual.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;S&lt;/code&gt; Lo mismo pero aplicado a lineas enteras.&lt;/p&gt;
 
-&lt;p&gt;La funcion &lt;code&gt;d&lt;/code&gt; toma el mismo comportamiento que &lt;code&gt;c&lt;/code&gt;, ya que podemos eliminar palabras o lineas, tambien N numero de palabras o N numero de lineas.&lt;/p&gt;
+&lt;p&gt;La función &lt;code&gt;d&lt;/code&gt; toma el mismo comportamiento que &lt;code&gt;c&lt;/code&gt;, ya que podemos eliminar palabras o lineas, también N numero de palabras o N numero de lineas.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;3dw&lt;/code&gt; Borraria 3 palabras apartir de nuestra posicion actual. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;3dw&lt;/code&gt; Borraría 3 palabras a partir de nuestra posición actual. &lt;/p&gt;
 
-&lt;p&gt;Y aqui es dodne nos empezamos a sentir comodos. &lt;code&gt;d$&lt;/code&gt; &lt;code&gt;d0&lt;/code&gt; &lt;code&gt;dd&lt;/code&gt; probablemente ya sea muy muy obvio lo que estos comandos hacen. Borrar al fina, borrar al incio, borrar la linea completa, respectivamente.&lt;/p&gt;
+&lt;p&gt;Y aquí es donde nos empezamos a sentir cómodos. &lt;code&gt;d$&lt;/code&gt; &lt;code&gt;d0&lt;/code&gt; &lt;code&gt;dd&lt;/code&gt; probablemente ya sea muy muy obvio lo que estos comandos hacen. Borrar al fina, borrar al inicio, borrar la linea completa, respectivamente.&lt;/p&gt;
 
 &lt;h3 id=&quot;pegar&quot;&gt;Pegar&lt;/h3&gt;
 
 &lt;p&gt;Ya mencione el comando &lt;code&gt;p&lt;/code&gt;, ahora solo queda decir que &lt;code&gt;p&lt;/code&gt; pega despues de y &lt;code&gt;P&lt;/code&gt; pega antes de.&lt;/p&gt;
 
-&lt;p&gt;Podemos hacer un &lt;code&gt;3p&lt;/code&gt; y nos pegaria la misma linea 3 veses.&lt;/p&gt;
+&lt;p&gt;Podemos hacer un &lt;code&gt;3p&lt;/code&gt; y nos pegaría la misma linea 3 veces.&lt;/p&gt;
 
 &lt;h2 id=&quot;por-ultimo&quot;&gt;Por ultimo&lt;/h2&gt;
 
-&lt;p&gt;&lt;code&gt;~&lt;/code&gt; Esa cosa (lol) Nos pasa de mayus a minus. Desde modo normal el caracter sobre el que este el puntero lo cambia, si esta en minusculo lo pasa a mayuscula y viseverza.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;~&lt;/code&gt; Esa cosa (lol) Nos pasa de mayus a minus. Desde modo normal el carácter sobre el que este el puntero lo cambia, si esta en minúsculo lo pasa a mayúscula y viseverza.&lt;/p&gt;
 
 &lt;h2 id=&quot;dia-5&quot;&gt;Dia 5.&lt;/h2&gt;
 &lt;p&gt;Creo que mañana sera algo sobre el modo visual y copias y pegar bloques de texto.
