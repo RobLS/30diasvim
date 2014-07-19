@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dia 5. Al mero estilo Vim - RobLS</title>
+    <title>Dia 6. Copiar y Pegar - RobLS</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.">
-    <link rel="canonical" href="http:robls.github.io/30diasvim/Dia5-Al-mero-estilo-Vim.html">
+    <link rel="canonical" href="http:robls.github.io/30diasvim/Dia6-CyP.html">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript">
 /*        $(function() {
@@ -82,64 +82,33 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>Dia 5. Al mero estilo Vim</h1>
-    <p class="meta">Jul 18, 2014</p>
+    <h1>Dia 6. Copiar y Pegar</h1>
+    <p class="meta">Jul 19, 2014</p>
   </header>
 
   <article class="post-content">
-  <p>Ahora toca editar “al mero estilo Vim”, no tengo más introducción.</p>
+  <p>Ya conocemos los comandos para copiar y pegar, <code>y</code>, <code>p</code>. Pero que pasa cuando queremos copiar mas de una linea o bloque de código.</p>
 
-<h2 id="dos-patadas-y-a-editar">Dos patadas y a editar</h2>
+<p>Aquí entra el modo VISIAL, <code>v</code> con este comando entramos en modo visual, podemos notarlo en la barra de estado indicandosnos “– VISUAL –” o algo asi.</p>
 
-<p>Ahora las teclas para editar son <code>a</code> e <code>i</code>, bueno no son todas. Repito: En Vim todo el teclado hace algo.</p>
+<p>Ahora con el comando <code>V</code> entramos en modo visual por lineas, lo cual es conveniente cuando queremos borra, copiar, o lo seleccionar por lineas.</p>
 
-<p><code>c</code> El comando c (tecla ‘c’) de “cambiar”. Por ejemplo <code>cw</code> cambia una palabra y nos deja en modo INSERT.</p>
+<p>Entonces si queremos copiar un bloque de 5 leneas de en el archivo, entramos en modo visual y nos desplazamos 5 lineas. Después podemos borrar o copiar, y pegarlo donde nos de la gana.</p>
 
-<pre><code>Hola lundo
+<pre><code>V
+5j
+d
+kkkkkkkkkkkkkkk ... o 22k
+p
 </code></pre>
 
-<p>Con el puntero sobre “lundo” hacemos, <code>cw</code> borra la palabra y corregimos.</p>
+<p>Listo ya copiamos y pegamos un bloque de 5 lineas. </p>
 
-<p>Aplica también para <code>c$</code> Incluso podemos hacer <code>c3$</code> que nos eliminaría 3 lineas apartide de nuestra posición actual y nos dejaría en modo edición.</p>
+<p>Ya podemos copiar y pegar por palabras y ahora por bloques.</p>
 
-<p>Y si nuestra linea esta completamente mal, para borrarla y editar hay dos formas <code>d$i</code> o <code>cc</code></p>
+<h2 id="dia-6">Dia 6</h2>
 
-<p>Es tan natural cuando usas los comandos, por ejemplo <code>d$i</code> significa: forra hasta el final de la linea y entra en modo edición.</p>
-
-<p><code>cc</code> es lo mismo pero en dos dedazos.</p>
-
-<p>Por ultimo <code>C</code> en muchos casos la letra mayúscula del comando tiene una función similar, en el caso de <code>C</code> indicamos que queremos cambiar el texto hasta el final de la linea. (suponiendo que el puntero esta sobre la ‘e’ después de la coma)</p>
-
-<pre><code>Esto se queda, esto se va.
-`C`
-Esto se queda, 
-</code></pre>
-
-<p>Y quedamos en modo INSERT.</p>
-
-<p><code>s</code> Entramos en modo edición “substituyendo” el carácter en la posición actual.</p>
-
-<p><code>S</code> Lo mismo pero aplicado a lineas enteras.</p>
-
-<p>La función <code>d</code> toma el mismo comportamiento que <code>c</code>, ya que podemos eliminar palabras o lineas, también N numero de palabras o N numero de lineas.</p>
-
-<p><code>3dw</code> Borraría 3 palabras a partir de nuestra posición actual. </p>
-
-<p>Y aquí es donde nos empezamos a sentir cómodos. <code>d$</code> <code>d0</code> <code>dd</code> probablemente ya sea muy muy obvio lo que estos comandos hacen. Borrar al fina, borrar al inicio, borrar la linea completa, respectivamente.</p>
-
-<h3 id="pegar">Pegar</h3>
-
-<p>Ya mencione el comando <code>p</code>, ahora solo queda decir que <code>p</code> pega despues de y <code>P</code> pega antes de.</p>
-
-<p>Podemos hacer un <code>3p</code> y nos pegaría la misma linea 3 veces.</p>
-
-<h2 id="por-ultimo">Por ultimo</h2>
-
-<p><code>~</code> Esa cosa (lol) Nos pasa de mayus a minus. Desde modo normal el carácter sobre el que este el puntero lo cambia, si esta en minúsculo lo pasa a mayúscula y viseverza.</p>
-
-<h2 id="dia-5">Dia 5.</h2>
-<p>Creo que mañana sera algo sobre el modo visual y copias y pegar bloques de texto.
-Pues este es el estilo Vim, ese donde el teclado hace todo y no hay un mouse y mucho menos un click y click derecho.</p>
+<p>Bien con esto queda, espero, mas claro eso de copiar y pegar. Con el tiempo espero, que lleguen quejas diciendo que hay cosas que no coinciden jajaja, ya que es muy probable que me salte algo o que olvide algo. </p>
 
   </article>
 
@@ -153,15 +122,12 @@ Pues este es el estilo Vim, ese donde el teclado hace todo y no hay un mouse y m
     <div id="page-navigation">
         <div class="left">
         
-                <a href="/30diasvim/Dia4-Dazarin-del-agua.html" title="Previous Post:
-Dia 4. Danzarín del agua">&laquo; Dia 4. Danzarín del agua</a>
+                <a href="/30diasvim/Dia5-Al-mero-estilo-Vim.html" title="Previous Post:
+Dia 5. Al mero estilo Vim">&laquo; Dia 5. Al mero estilo Vim</a>
         
         </div>
         <a href="index.html">Inicio</a>
         <div class="right">
-        
-                <a href="/30diasvim/Dia6-CyP.html" title="next Post:
-Dia 6. Copiar y Pegar">Dia 6. Copiar y Pegar &raquo; </a>
         
         </div>
     </div> 

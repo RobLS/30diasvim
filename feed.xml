@@ -5,9 +5,41 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 18 Jul 2014 23:51:41 -0500</pubDate>
-    <lastBuildDate>Fri, 18 Jul 2014 23:51:41 -0500</lastBuildDate>
+    <pubDate>Sat, 19 Jul 2014 10:10:10 -0500</pubDate>
+    <lastBuildDate>Sat, 19 Jul 2014 10:10:10 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Dia 6. Copiar y Pegar</title>
+        <description>&lt;p&gt;Ya conocemos los comandos para copiar y pegar, &lt;code&gt;y&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;. Pero que pasa cuando queremos copiar mas de una linea o bloque de código.&lt;/p&gt;
+
+&lt;p&gt;Aquí entra el modo VISIAL, &lt;code&gt;v&lt;/code&gt; con este comando entramos en modo visual, podemos notarlo en la barra de estado indicandosnos “– VISUAL –” o algo asi.&lt;/p&gt;
+
+&lt;p&gt;Ahora con el comando &lt;code&gt;V&lt;/code&gt; entramos en modo visual por lineas, lo cual es conveniente cuando queremos borra, copiar, o lo seleccionar por lineas.&lt;/p&gt;
+
+&lt;p&gt;Entonces si queremos copiar un bloque de 5 leneas de en el archivo, entramos en modo visual y nos desplazamos 5 lineas. Después podemos borrar o copiar, y pegarlo donde nos de la gana.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;V
+5j
+d
+kkkkkkkkkkkkkkk ... o 22k
+p
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Listo ya copiamos y pegamos un bloque de 5 lineas. &lt;/p&gt;
+
+&lt;p&gt;Ya podemos copiar y pegar por palabras y ahora por bloques.&lt;/p&gt;
+
+&lt;h2 id=&quot;dia-6&quot;&gt;Dia 6&lt;/h2&gt;
+
+&lt;p&gt;Bien con esto queda, espero, mas claro eso de copiar y pegar. Con el tiempo espero, que lleguen quejas diciendo que hay cosas que no coinciden jajaja, ya que es muy probable que me salte algo o que olvide algo. &lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http:robls.github.io/30diasvim/Dia6-CyP.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia6-CyP.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dia 5. Al mero estilo Vim</title>
