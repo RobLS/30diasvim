@@ -5,9 +5,58 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 19 Jul 2014 10:16:15 -0500</pubDate>
-    <lastBuildDate>Sat, 19 Jul 2014 10:16:15 -0500</lastBuildDate>
+    <pubDate>Mon, 21 Jul 2014 13:01:10 -0500</pubDate>
+    <lastBuildDate>Mon, 21 Jul 2014 13:01:10 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Dia 7. Busquedas</title>
+        <description>&lt;p&gt;Una parte importante al trabajar con texto es poder buscar en el archivos, hoy sera una cosa de búsquedas básicas dentro de un archivo.&lt;/p&gt;
+
+&lt;h2 id=&quot;bsquedas-en-el-archivo&quot;&gt;Búsquedas en el archivo&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;/&lt;/code&gt; Con este comando en modo normal, podemos entrar a buscar, es muy simple en la ultima linea veremos que el puntero cambia, ahora es: ‘/’, en ese momento podemos escribir lo que queremos buscar en el archivo.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/hola mundo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Si en el archivo tenemos “hola mundo” debería mandarnos directo a la primer coincidencia.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/color
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Si buscamos color dentro del archivo puede que tengamos que buscar mas de una vez, con &lt;code&gt;/&lt;/code&gt; podemos hacer búsquedas hacia adelante, lo único que tenemos que hacer una vez encontremos la primer coincidencia, es seguir con el comando &lt;code&gt;n&lt;/code&gt; para avanzar a la siguiente coincidencia. &lt;/p&gt;
+
+&lt;p&gt;Por otro lado si queremos buscar hacia atrás, tenemos el comando &lt;code&gt;?&lt;/code&gt;, que funciona de la misma forma solo que el comportamiento de &lt;code&gt;n&lt;/code&gt; cambia, ya que ahora saltara a la coincidencia anterior (hacia arriba del texto)&lt;/p&gt;
+
+&lt;p&gt;De cualquier modo también podemos usar &lt;code&gt;N&lt;/code&gt; este comando actuara de forma inversa según &lt;code&gt;n&lt;/code&gt;. Entonces, si buscamos &lt;code&gt;/hola&lt;/code&gt; y seguimos con el comando &lt;code&gt;n&lt;/code&gt; nos llevara a la siguiente coincidencia(hacia abajo del texto) por lo contrario &lt;code&gt;N&lt;/code&gt; nos debe llevar hacia arriba del texto.&lt;/p&gt;
+
+&lt;h2 id=&quot;bsquedas-sobre-la-linea&quot;&gt;Búsquedas sobre la linea&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;f&lt;/code&gt; Con esto podremos llegar a la primer coincidencia según el carácter que le pasemos. &lt;code&gt;fh&lt;/code&gt; nos llevaría a la primer coincidencia de ‘h’ en la linea actual.&lt;/p&gt;
+
+&lt;p&gt;Para buscar en “reversa” usamos &lt;code&gt;F&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;t&lt;/code&gt; Este comando nos deja el cursos un carácter después de la primer coincidencia. Ejemplo&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Busca cuantas c contiene
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Con &lt;code&gt;tc&lt;/code&gt; y suponiendo que el cursos esta al inicio de la linea, el comando nos dejaría el cursos en la ‘u’ de “cuantas”. &lt;/p&gt;
+
+&lt;p&gt;Para dejar el cursos un carácter antes del carácter a buscar, deberíamos usar? &lt;code&gt;T&lt;/code&gt;, muy bien.&lt;/p&gt;
+
+&lt;p&gt;Por ultimo si queremos pasar a la siguiente coincidencia podemos usar &lt;code&gt;;&lt;/code&gt; y para regresar a la coincidencia anterior tenemos &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;dia-7&quot;&gt;Dia 7&lt;/h2&gt;
+&lt;p&gt;Como todo en vim, es cuestión de usarlo y practicar, para sentirse cómodo con la forma de trabajar y para que no se nos olvide. &lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http:robls.github.io/30diasvim/Dia7-Busquedas.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia7-Busquedas.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dia 6. Copiar y Pegar</title>

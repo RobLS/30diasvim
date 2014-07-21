@@ -1,0 +1,160 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+@import "susy";
+@import "compass";
+@import "breakpoint";
+$over : #26ec7f;
+$verde: #58E893;
+
+* {
+  margin:0;padding:0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  @include filter-gradient(#f85032, #18f063, vertical);
+  @include background-image(linear-gradient( top, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 13%, rgba(229,245,12,1) 29%, rgba(229,245,12,1) 41%, rgba(24,240,99,1) 60%, rgba(24,240,99,1) 71%, rgba(39,39,230,1) 88%, rgba(39,39,230,1) 100%));
+}
+p, a {
+  font-family: Helvetica,Arial,sans-serif; 
+}
+
+.page-content {
+  @include breakpoint(600px) {
+    @include container(960px);
+    padding: 1em 2em;
+    position: relative;
+  }
+}
+
+aside {
+  
+  @include breakpoint(600px) {
+    @include span(3 of 10);
+    position: absolite;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+  }
+  text-align: center;
+
+  h1 {
+    font-size: 10em;
+    margin-bottom: -20px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    padding-top: 20px;
+    margin: 20px 0;
+    border-top: solid 1px #000;
+  }
+
+  ul li{
+    display:inline-block;
+    margin: 5px 20px;
+  }
+}
+
+.content {
+  @include breakpoint(600px) {
+    @include span(7 at 4 of 10);
+  }
+}
+
+.main {
+  background-color: $verde;
+}
+
+
+header {
+  margin: auto;
+  h1 {
+    text-align: center;
+    @include breakpoint(600px) {
+      font-size: 60px;
+    }
+  }
+
+  p {
+    margin: 5% 0;
+    padding: 1%;
+    text-align: center;
+  }
+}
+
+.home {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  ul {
+    margin:0;
+    padding:0;
+  }
+}
+
+.home ul li {
+  list-style: none;
+  margin: 1px auto;
+  a {
+    margin: 0 auto;
+    padding: 1em 0em;
+    display:block;
+    width:100%;
+    color: black;
+    text-decoration: none;
+    position: relative;
+  }
+  a:hover {
+    background-color: $over;
+    border:solid 1px white;
+  }
+}
+
+.post-content {
+  padding: 0 10px;
+}
+
+.post {
+  h2 {
+    font-size: 30px;
+    margin: 30px 0 10px 0;
+    border-bottom: 1px solid;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+  code {
+    padding: 0px 5px;
+    border: 1px solid #DDD;
+    border-radius: 0px;
+    background-color: #333;
+    color: #CCC;
+  }
+
+  pre {
+    code {
+      display: block;
+      padding: 2px 10px;
+      border: 1px solid #DDD;
+      border-radius: 5px;
+      background-color: #333;
+      color: #CCC;
+    }
+  }
+}
+
+footer {
+text-align: center;
+  .right {
+    float: right;
+  }
+  .left {
+    float: left;
+  }
+}

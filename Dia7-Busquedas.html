@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dia 6. Copiar y Pegar - RobLS</title>
+    <title>Dia 7. Busquedas - RobLS</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.">
-    <link rel="canonical" href="http:robls.github.io/30diasvim/Dia6-CyP.html">
+    <link rel="canonical" href="http:robls.github.io/30diasvim/Dia7-Busquedas.html">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript">
 /*        $(function() {
@@ -72,33 +72,50 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>Dia 6. Copiar y Pegar</h1>
-    <p class="meta">Jul 19, 2014</p>
+    <h1>Dia 7. Busquedas</h1>
+    <p class="meta">Jul 21, 2014</p>
   </header>
 
   <article class="post-content">
-  <p>Ya conocemos los comandos para copiar y pegar, <code>y</code>, <code>p</code>. Pero que pasa cuando queremos copiar mas de una linea o bloque de código.</p>
+  <p>Una parte importante al trabajar con texto es poder buscar en el archivos, hoy sera una cosa de búsquedas básicas dentro de un archivo.</p>
 
-<p>Aquí entra el modo VISIAL, <code>v</code> con este comando entramos en modo visual, podemos notarlo en la barra de estado indicandosnos “– VISUAL –” o algo asi.</p>
+<h2 id="bsquedas-en-el-archivo">Búsquedas en el archivo</h2>
 
-<p>Ahora con el comando <code>V</code> entramos en modo visual por lineas, lo cual es conveniente cuando queremos borra, copiar, o lo seleccionar por lineas.</p>
+<p><code>/</code> Con este comando en modo normal, podemos entrar a buscar, es muy simple en la ultima linea veremos que el puntero cambia, ahora es: ‘/’, en ese momento podemos escribir lo que queremos buscar en el archivo.</p>
 
-<p>Entonces si queremos copiar un bloque de 5 leneas de en el archivo, entramos en modo visual y nos desplazamos 5 lineas. Después podemos borrar o copiar, y pegarlo donde nos de la gana.</p>
-
-<pre><code>V
-5j
-d
-kkkkkkkkkkkkkkk ... o 22k
-p
+<pre><code>/hola mundo
 </code></pre>
 
-<p>Listo ya copiamos y pegamos un bloque de 5 lineas. </p>
+<p>Si en el archivo tenemos “hola mundo” debería mandarnos directo a la primer coincidencia.</p>
 
-<p>Ya podemos copiar y pegar por palabras y ahora por bloques.</p>
+<pre><code>/color
+</code></pre>
 
-<h2 id="dia-6">Dia 6</h2>
+<p>Si buscamos color dentro del archivo puede que tengamos que buscar mas de una vez, con <code>/</code> podemos hacer búsquedas hacia adelante, lo único que tenemos que hacer una vez encontremos la primer coincidencia, es seguir con el comando <code>n</code> para avanzar a la siguiente coincidencia. </p>
 
-<p>Bien con esto queda, espero, mas claro eso de copiar y pegar. Con el tiempo espero, que lleguen quejas diciendo que hay cosas que no coinciden jajaja, ya que es muy probable que me salte algo o que olvide algo. </p>
+<p>Por otro lado si queremos buscar hacia atrás, tenemos el comando <code>?</code>, que funciona de la misma forma solo que el comportamiento de <code>n</code> cambia, ya que ahora saltara a la coincidencia anterior (hacia arriba del texto)</p>
+
+<p>De cualquier modo también podemos usar <code>N</code> este comando actuara de forma inversa según <code>n</code>. Entonces, si buscamos <code>/hola</code> y seguimos con el comando <code>n</code> nos llevara a la siguiente coincidencia(hacia abajo del texto) por lo contrario <code>N</code> nos debe llevar hacia arriba del texto.</p>
+
+<h2 id="bsquedas-sobre-la-linea">Búsquedas sobre la linea</h2>
+
+<p><code>f</code> Con esto podremos llegar a la primer coincidencia según el carácter que le pasemos. <code>fh</code> nos llevaría a la primer coincidencia de ‘h’ en la linea actual.</p>
+
+<p>Para buscar en “reversa” usamos <code>F</code></p>
+
+<p><code>t</code> Este comando nos deja el cursos un carácter después de la primer coincidencia. Ejemplo</p>
+
+<pre><code>Busca cuantas c contiene
+</code></pre>
+
+<p>Con <code>tc</code> y suponiendo que el cursos esta al inicio de la linea, el comando nos dejaría el cursos en la ‘u’ de “cuantas”. </p>
+
+<p>Para dejar el cursos un carácter antes del carácter a buscar, deberíamos usar? <code>T</code>, muy bien.</p>
+
+<p>Por ultimo si queremos pasar a la siguiente coincidencia podemos usar <code>;</code> y para regresar a la coincidencia anterior tenemos <code>,</code>.</p>
+
+<h2 id="dia-7">Dia 7</h2>
+<p>Como todo en vim, es cuestión de usarlo y practicar, para sentirse cómodo con la forma de trabajar y para que no se nos olvide. </p>
 
   </article>
 
@@ -112,15 +129,12 @@ p
     <div id="page-navigation">
         <div class="left">
         
-                <a href="/30diasvim/Dia5-Al-mero-estilo-Vim.html" title="Previous Post:
-Dia 5. Al mero estilo Vim">&laquo; Dia 5. Al mero estilo Vim</a>
+                <a href="/30diasvim/Dia6-CyP.html" title="Previous Post:
+Dia 6. Copiar y Pegar">&laquo; Dia 6. Copiar y Pegar</a>
         
         </div>
         <a href="index.html">Inicio</a>
         <div class="right">
-        
-                <a href="/30diasvim/Dia7-Busquedas.html" title="next Post:
-Dia 7. Busquedas">Dia 7. Busquedas &raquo; </a>
         
         </div>
     </div> 
