@@ -5,9 +5,53 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 21 Jul 2014 13:01:10 -0500</pubDate>
-    <lastBuildDate>Mon, 21 Jul 2014 13:01:10 -0500</lastBuildDate>
+    <pubDate>Tue, 22 Jul 2014 11:10:39 -0500</pubDate>
+    <lastBuildDate>Tue, 22 Jul 2014 11:10:39 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Dia 8. Archivos</title>
+        <description>&lt;p&gt;Como programador es raro tener que trabajar con un solo archivo, siempre hay diferentes archivos que debemos editar. Por ejemplo en una web, tenemos: index.html, main.css y algun scrip.js&lt;/p&gt;
+
+&lt;p&gt;La idea es que siempre tenemos diferentes archivos, ahora vamos a cargar los N archivos y movernos entre ellos.&lt;/p&gt;
+
+&lt;h2 id=&quot;mltiples-archivos&quot;&gt;Múltiples archivos.&lt;/h2&gt;
+
+&lt;p&gt;Para abrir múltiples archivos solo podemos pasarlos como argumentos a vim.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$vim archivo1.txt archivo2.html archivo3.java
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Con esto ya tenemos los 3 archivos en vim, pero solo vemos uno, debería de ser el primero.&lt;/p&gt;
+
+&lt;h2 id=&quot;siguiente-archivo&quot;&gt;Siguiente archivo&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;:n&lt;/code&gt; Desde linea de comandos de Vim nos movemos al siguiente archivo. Ya deberíamos estar en el archivo2.&lt;/p&gt;
+
+&lt;h2 id=&quot;archivo-anterior&quot;&gt;Archivo anterior&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;:prev&lt;/code&gt; Con esto podemos regresar al archivo previo según el orden en que los pasamos como argumentos.&lt;/p&gt;
+
+&lt;h2 id=&quot;intercambio-rpido&quot;&gt;Intercambio rápido&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;ctrl+6&amp;gt;&lt;/code&gt; Una vez que ya te moviste al menos entre dos archivos, digamos archivo1 y archivo2, podemos usar el siguiente comando para regresar al archivo anterior al actual. Aquí no se involucra el orden de los argumentos. &lt;/p&gt;
+
+&lt;h2 id=&quot;cargar-archivos-de-vim&quot;&gt;Cargar archivos de Vim&lt;/h2&gt;
+
+&lt;p&gt;Ahora que si nos olvidamos de cargar archivos desde el inicio.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;:e archivo4.txt&lt;/code&gt; Y nos manda directo al archivo, en caso de no existir el archivo se crea al momento de guardarlo (&lt;code&gt;:w&lt;/code&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;dia-8&quot;&gt;Dia 8&lt;/h2&gt;
+
+&lt;p&gt;Ya podemos abrir y pasear entre varios archivos, lo siguiente es dividir la pantalla, no solo para editar varios archivos sino ver mas de un archivo al mismo tiempo.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http:robls.github.io/30diasvim/Dia8-Archivos.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia8-Archivos.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dia 7. Busquedas</title>

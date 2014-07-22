@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dia 7. Busquedas - RobLS</title>
+    <title>Dia 8. Archivos - RobLS</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.">
-    <link rel="canonical" href="http:robls.github.io/30diasvim/Dia7-Busquedas.html">
+    <link rel="canonical" href="http:robls.github.io/30diasvim/Dia8-Archivos.html">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript">
 /*        $(function() {
@@ -72,50 +72,45 @@
         <div class="post">
 
   <header class="post-header">
-    <h1>Dia 7. Busquedas</h1>
-    <p class="meta">Jul 21, 2014</p>
+    <h1>Dia 8. Archivos</h1>
+    <p class="meta">Jul 22, 2014</p>
   </header>
 
   <article class="post-content">
-  <p>Una parte importante al trabajar con texto es poder buscar en el archivos, hoy sera una cosa de búsquedas básicas dentro de un archivo.</p>
+  <p>Como programador es raro tener que trabajar con un solo archivo, siempre hay diferentes archivos que debemos editar. Por ejemplo en una web, tenemos: index.html, main.css y algun scrip.js</p>
 
-<h2 id="bsquedas-en-el-archivo">Búsquedas en el archivo</h2>
+<p>La idea es que siempre tenemos diferentes archivos, ahora vamos a cargar los N archivos y movernos entre ellos.</p>
 
-<p><code>/</code> Con este comando en modo normal, podemos entrar a buscar, es muy simple en la ultima linea veremos que el puntero cambia, ahora es: ‘/’, en ese momento podemos escribir lo que queremos buscar en el archivo.</p>
+<h2 id="mltiples-archivos">Múltiples archivos.</h2>
 
-<pre><code>/hola mundo
+<p>Para abrir múltiples archivos solo podemos pasarlos como argumentos a vim.</p>
+
+<pre><code>$vim archivo1.txt archivo2.html archivo3.java
 </code></pre>
 
-<p>Si en el archivo tenemos “hola mundo” debería mandarnos directo a la primer coincidencia.</p>
+<p>Con esto ya tenemos los 3 archivos en vim, pero solo vemos uno, debería de ser el primero.</p>
 
-<pre><code>/color
-</code></pre>
+<h2 id="siguiente-archivo">Siguiente archivo</h2>
 
-<p>Si buscamos color dentro del archivo puede que tengamos que buscar mas de una vez, con <code>/</code> podemos hacer búsquedas hacia adelante, lo único que tenemos que hacer una vez encontremos la primer coincidencia, es seguir con el comando <code>n</code> para avanzar a la siguiente coincidencia. </p>
+<p><code>:n</code> Desde linea de comandos de Vim nos movemos al siguiente archivo. Ya deberíamos estar en el archivo2.</p>
 
-<p>Por otro lado si queremos buscar hacia atrás, tenemos el comando <code>?</code>, que funciona de la misma forma solo que el comportamiento de <code>n</code> cambia, ya que ahora saltara a la coincidencia anterior (hacia arriba del texto)</p>
+<h2 id="archivo-anterior">Archivo anterior</h2>
 
-<p>De cualquier modo también podemos usar <code>N</code> este comando actuara de forma inversa según <code>n</code>. Entonces, si buscamos <code>/hola</code> y seguimos con el comando <code>n</code> nos llevara a la siguiente coincidencia(hacia abajo del texto) por lo contrario <code>N</code> nos debe llevar hacia arriba del texto.</p>
+<p><code>:prev</code> Con esto podemos regresar al archivo previo según el orden en que los pasamos como argumentos.</p>
 
-<h2 id="bsquedas-sobre-la-linea">Búsquedas sobre la linea</h2>
+<h2 id="intercambio-rpido">Intercambio rápido</h2>
 
-<p><code>f</code> Con esto podremos llegar a la primer coincidencia según el carácter que le pasemos. <code>fh</code> nos llevaría a la primer coincidencia de ‘h’ en la linea actual.</p>
+<p><code>&lt;ctrl+6&gt;</code> Una vez que ya te moviste al menos entre dos archivos, digamos archivo1 y archivo2, podemos usar el siguiente comando para regresar al archivo anterior al actual. Aquí no se involucra el orden de los argumentos. </p>
 
-<p>Para buscar en “reversa” usamos <code>F</code></p>
+<h2 id="cargar-archivos-de-vim">Cargar archivos de Vim</h2>
 
-<p><code>t</code> Este comando nos deja el cursos un carácter después de la primer coincidencia. Ejemplo</p>
+<p>Ahora que si nos olvidamos de cargar archivos desde el inicio.</p>
 
-<pre><code>Busca cuantas c contiene
-</code></pre>
+<p><code>:e archivo4.txt</code> Y nos manda directo al archivo, en caso de no existir el archivo se crea al momento de guardarlo (<code>:w</code>).</p>
 
-<p>Con <code>tc</code> y suponiendo que el cursos esta al inicio de la linea, el comando nos dejaría el cursos en la ‘u’ de “cuantas”. </p>
+<h2 id="dia-8">Dia 8</h2>
 
-<p>Para dejar el cursos un carácter antes del carácter a buscar, deberíamos usar? <code>T</code>, muy bien.</p>
-
-<p>Por ultimo si queremos pasar a la siguiente coincidencia podemos usar <code>;</code> y para regresar a la coincidencia anterior tenemos <code>,</code>.</p>
-
-<h2 id="dia-7">Dia 7</h2>
-<p>Como todo en vim, es cuestión de usarlo y practicar, para sentirse cómodo con la forma de trabajar y para que no se nos olvide. </p>
+<p>Ya podemos abrir y pasear entre varios archivos, lo siguiente es dividir la pantalla, no solo para editar varios archivos sino ver mas de un archivo al mismo tiempo.</p>
 
   </article>
 
@@ -129,15 +124,12 @@
     <div id="page-navigation">
         <div class="left">
         
-                <a href="/30diasvim/Dia6-CyP.html" title="Previous Post:
-Dia 6. Copiar y Pegar">&laquo; Dia 6. Copiar y Pegar</a>
+                <a href="/30diasvim/Dia7-Busquedas.html" title="Previous Post:
+Dia 7. Busquedas">&laquo; Dia 7. Busquedas</a>
         
         </div>
         <a href="index.html">Inicio</a>
         <div class="right">
-        
-                <a href="/30diasvim/Dia8-Archivos.html" title="next Post:
-Dia 8. Archivos">Dia 8. Archivos &raquo; </a>
         
         </div>
     </div> 
