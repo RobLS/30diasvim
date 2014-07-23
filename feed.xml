@@ -5,9 +5,53 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 22 Jul 2014 11:10:39 -0500</pubDate>
-    <lastBuildDate>Tue, 22 Jul 2014 11:10:39 -0500</lastBuildDate>
+    <pubDate>Wed, 23 Jul 2014 11:16:37 -0500</pubDate>
+    <lastBuildDate>Wed, 23 Jul 2014 11:16:37 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Dia 9. Spliteando</title>
+        <description>&lt;p&gt;Hoy toca splitear la ventana para ver dos o mas archivos al mismo tiempo. La idea es poder dividir la pantalla y moverse entre cada división.&lt;/p&gt;
+
+&lt;p&gt;Con la misma idea de editar el archivo1 y archivo2, vamos entrandole a los conceptos.&lt;/p&gt;
+
+&lt;h2 id=&quot;split-horizontal&quot;&gt;Split Horizontal&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;CRTL+w&amp;gt;s&lt;/code&gt; Entonces ya deberíamos ver la ventana dividida. si ya teníamos un archivo cargado las divisiones deberían ser iguales.. lo que podemos hacer es abrir otro archivo en la actual y dejar el anterior en la nueva sección.&lt;/p&gt;
+
+&lt;p&gt;Para dividir desde linea de comandos en vim podemos usar&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;`:sp {file}`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Y le pasamos el archivo que va a cargar en la nueva sección.&lt;/p&gt;
+
+&lt;h2 id=&quot;split-vertical&quot;&gt;Split Vertical&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;CTRL+w&amp;gt;v&lt;/code&gt; Igual que el anterior pero en vertical,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;:vsp {file}&lt;/code&gt; Y listo podemos indicar el archivo que vamos a mostrar en un split vertical.&lt;/p&gt;
+
+&lt;h2 id=&quot;lol&quot;&gt;lol&lt;/h2&gt;
+
+&lt;p&gt;Casi cierro el post aquí jaja… Y como F*CK nos movemos?&lt;/p&gt;
+
+&lt;h2 id=&quot;movindote-entre-splits&quot;&gt;Moviéndote Entre Splits&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;CTRL+w&amp;gt;w&lt;/code&gt; Este es como nuestro ya tan dependiente &amp;lt;alt+tab&amp;gt;, es el mas facil de recordar para pasar a al siguiente sección.&lt;/p&gt;
+
+&lt;p&gt;Ya de aquí pues sigue mas facíl: &lt;code&gt;&amp;lt;CTRL+w&amp;gt;&lt;/code&gt; y alguna tecla de movimiento en vim (h,j,k,l) y pasaremos a la sección indicada.&lt;/p&gt;
+
+&lt;p&gt;Si tenemos un split vertical y estamos en la sección derecha, para movernos a la sección izquierda: &lt;code&gt;&amp;lt;CTRL+w&amp;gt;h&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;dia-9&quot;&gt;Dia 9&lt;/h2&gt;
+&lt;p&gt;Pues creo que ahora si es todo, podemos splitear la ventada y cargar archivos diferentes y nos podemos pasar de una a otra. Si, creo que si.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http:robls.github.io/30diasvim/Dia9-Spliteando.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia9-Spliteando.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dia 8. Archivos</title>
