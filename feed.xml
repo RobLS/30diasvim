@@ -5,9 +5,54 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Jul 2014 11:16:37 -0500</pubDate>
-    <lastBuildDate>Wed, 23 Jul 2014 11:16:37 -0500</lastBuildDate>
+    <pubDate>Fri, 25 Jul 2014 14:22:25 -0500</pubDate>
+    <lastBuildDate>Fri, 25 Jul 2014 14:22:25 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
+    
+      <item>
+        <title>Dia 10. Dos Funciones Basicas</title>
+        <description>&lt;p&gt;Hay dos funciones super básicas y que ayudan mucho, hacen que uno se sienta experto, y son de las que mas apantalla, lol.&lt;/p&gt;
+
+&lt;h2 id=&quot;auto-itentado&quot;&gt;Auto-Itentado&lt;/h2&gt;
+
+&lt;p&gt;Esta es la fácil, cuando copiamos y pegamos codigo de otros lados, causando que se pierda la indentacion. Nunca llegue a usar esto en algun otro editor o IDE, pero en vim es muy muy sencillo, de echo con una sola tecla hacemos toda la chamba.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;=&lt;/code&gt; Listo. Si estamos sobre una linea y presionamos &lt;code&gt;==&lt;/code&gt; (dos veces =), esa linea debe ajustarse al nivel de identacion que le toca.&lt;/p&gt;
+
+&lt;p&gt;Ahora que si lo que queremos es justar todo un bloque o conjunto de lineas, nos pasamos a modo visual de preferencia por lineas &lt;code&gt;V&lt;/code&gt;, seleccionamos todas las lineas y aplicamos el comando &lt;code&gt;=&lt;/code&gt;. Listo.&lt;/p&gt;
+
+&lt;h2 id=&quot;remplazar-en-el-archivo&quot;&gt;Remplazar en el archivo&lt;/h2&gt;
+
+&lt;p&gt;Esta es todavía mejor, por ejemplo si tenemos un archivo en el que queremos cambiar cirta palabra por algo nuevo, no debemos buscar cada coincidencia y cambiarla manualmente.&lt;/p&gt;
+
+&lt;p&gt;Entonces la idea es simple, pasas el paremetro a buscar y que sera remplazado, y pasas la nueva cadena. Osea, asi:&lt;/p&gt;
+
+&lt;p&gt;:%s/viejo/nuevo/g &lt;/p&gt;
+
+&lt;p&gt;Listo, desde linea de comandos de vim, con esta instrucción remplazamos lo “viejo” por algo “nuevo” en todo el archivo. Bueno, ‘s’ de substituye, y ‘g’ global, el ‘%’ indica que sera en todo el archivo.&lt;/p&gt;
+
+&lt;p&gt;También podemos hacerlo por bloques de la linea N hasta la linea M.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:10,75s/viejo/nuevo/g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Podemos pasar un argumento para confirmar cada coincidencia:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:%s/viejo/nuevo/gc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Con esto cada que encuentre el valor buscado nos preguntara si queremos cambiarlo o dejarlo como esta. &lt;/p&gt;
+
+&lt;h2 id=&quot;dia-10&quot;&gt;Dia 10&lt;/h2&gt;
+
+&lt;p&gt;Como lo dije la principio, estas funciones, si que molan. &lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Jul 2014 00:00:00 -0500</pubDate>
+        <link>http:robls.github.io/30diasvim/Dia10-Dos-Funciones-Basicas.html</link>
+        <guid isPermaLink="true">http:robls.github.io/30diasvim/Dia10-Dos-Funciones-Basicas.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Dia 9. Spliteando</title>
