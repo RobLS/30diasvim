@@ -5,8 +5,8 @@
     <description>Esto es un ejercicio para obligarme a usar nuevas y mas avanzadas funciones en vim. Durante 30 dias usare vim y aqui estara publicado mi progreso.</description>
     <link>http:robls.github.io/30diasvim/</link>
     <atom:link href="http:robls.github.io/30diasvim/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 25 Jul 2014 21:13:26 -0500</pubDate>
-    <lastBuildDate>Fri, 25 Jul 2014 21:13:26 -0500</lastBuildDate>
+    <pubDate>Tue, 29 Jul 2014 18:04:23 -0500</pubDate>
+    <lastBuildDate>Tue, 29 Jul 2014 18:04:23 -0500</lastBuildDate>
     <generator>Jekyll v2.1.0</generator>
     
       <item>
@@ -43,9 +43,20 @@
 
 &lt;p&gt;Con esto cada que encuentre el valor buscado nos preguntara si queremos cambiarlo o dejarlo como esta. &lt;/p&gt;
 
+&lt;h2 id=&quot;plus&quot;&gt;PLUS&lt;/h2&gt;
+&lt;p&gt;Como ejecutar comandos externos a vim desde vim, ¿wtf?.
+Intenta esto 
+   &lt;code&gt;:ls&lt;/code&gt;
+Todo ok, no?
+Ahora esto
+    &lt;code&gt;:ls -la&lt;/code&gt;
+A mi me salio un error. Asi que para ejecutar comandos desde Vim podemos usar ‘!’ como prefijo, deja Vim, ejecuta el comando y podemos continuar editando. Entonces: 
+    &lt;code&gt;:!ls -la&lt;/code&gt;
+Pues ya de aqui la creatividad y explotar esta utilidad va por nosotros.&lt;/p&gt;
+
 &lt;h2 id=&quot;dia-10&quot;&gt;Dia 10&lt;/h2&gt;
 
-&lt;p&gt;Como lo dije la principio, estas funciones, si que molan. &lt;/p&gt;
+&lt;p&gt;Como lo dije la principio, estas funciones, si que molan… Varios dias despues acabo de agregar el PLUS :) &lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Jul 2014 00:00:00 -0500</pubDate>
         <link>http:robls.github.io/30diasvim/Dia10-Dos-Funciones-Basicas.html</link>
